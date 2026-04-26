@@ -1,3 +1,168 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+   background-color: #0d0410;
+  color: #fce8f0;
+  font-family: 'Noto Sans Thai', sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+:root {
+  --pink: #E53888;
+  --pink-light: #F37199;
+  --pink-dark: #AC1754;
+  --cream: #FDEB9E;
+  --bg: #0d0410;
+  --bg-card: #160610;
+  --bg-card-hover: #1e0a18;
+  --border: #2a0d1e;
+  --text: #fce8f0;
+  --text-muted: #c8a0b0;
+  --text-dim: #804060;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between; /* โลโก้ซ้าย ลิงก์ขวา */
+  align-items: center;
+  padding: 18px 48px;
+  border-bottom: 0.5px solid var(--border);
+  position: sticky; /* ติดด้านบนตอน scroll */
+  top: 0;
+  background-color: var(--bg);
+  z-index: 100; /* ลอยอยู่เหนือ element อื่น */
+}
+
+.nav-logo {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--pink-light);
+  letter-spacing: 1px;
+}
+
+.nav-links {
+   display: flex;
+  gap: 28px;
+}
+.nav-links a {
+  font-size: 13px;
+  color: var(--text-dim);
+  text-decoration: none; /* เอาเส้นใต้ออก */
+  transition: color 0.2s;
+}
+
+.nav-links a:hover {
+  color: var(--cream); /* hover เป็นเหลืองครีม */
+}
+
+/* ===== HERO ===== */
+.hero {
+  padding: 72px 48px 56px;
+  max-width: 680px;
+}
+
+.hero-tag {
+  font-size: 11px;
+  color: var(--pink-dark);
+  letter-spacing: 3px;
+  margin-bottom: 12px;
+}
+
+.hero-name {
+  font-size: 48px;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.1;
+  margin-bottom: 8px;
+}
+
+.hero-alias {
+  font-size: 14px;
+  color: var(--text-dim);
+  margin-bottom: 20px;
+}
+
+.hero-desc {
+  font-size: 15px;
+  color: var(--text-muted);
+  line-height: 1.9;
+  margin-bottom: 16px;
+}
+
+.hero-status {
+  font-size: 12px;
+  color: #1DCD9F; /* สีเขียว mint = open to work */
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.status-dot {
+  width: 7px;
+  height: 7px;
+  background: #1DCD9F;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.hero-line {
+  width: 36px;
+  height: 2px;
+  background: var(--pink);
+  border-radius: 2px;
+  margin: 20px 0;
+}
+
+/* ===== BUTTONS ===== */
+.hero-btns {
+  display: flex;
+  gap: 12px;
+}
+
+.btn-primary {
+  padding: 10px 26px;
+  background: var(--pink);
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: 'Noto Sans Thai', sans-serif;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-primary:hover {
+  background: var(--pink-dark);
+}
+
+.btn-outline {
+  padding: 10px 26px;
+  background: transparent;
+  color: var(--cream);
+  border: 1.5px solid var(--pink-dark);
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: 'Noto Sans Thai', sans-serif;
+  cursor: pointer;
+  transition: border-color 0.2s;
+}
+
+.btn-outline:hover {
+  border-color: var(--cream);
+}
+
+/* ===== SECTIONS ===== */
+.section {
+  padding: 48px;
+  border-top: 0.5px solid var(--border);
+  max-w
 /* ===== SKILLS TAGS ===== */
 .tag-hot {
   padding: 6px 14px;
