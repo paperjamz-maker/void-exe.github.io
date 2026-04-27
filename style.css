@@ -169,8 +169,9 @@ body {
   border-radius: 20px;
   font-size: 13px;
   background: #1e0512;
-  border: 0.5px solid var(--pink);
-  color: var(--pink-light);
+  border: 0.5px solid #E53888;
+  color: #F37199;
+  display: inline-block;
 }
 
 .tag-cool {
@@ -178,6 +179,7 @@ body {
   border-radius: 20px;
   font-size: 13px;
   background: #160610;
-  border: 0.5px solid var(--border);
-  color: var(--text-dim);
+  border: 0.5px solid #2a0d1e;
+  color: #804060;
+  display: inline-block;
 }
