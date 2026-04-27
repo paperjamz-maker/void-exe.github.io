@@ -162,16 +162,40 @@ body {
 .section {
   padding: 48px;
   border-top: 0.5px solid var(--border);
-  max-w
-/* ===== SKILLS TAGS ===== */
+  max-width: 800px;
+}
+
+.section-title {
+  font-size: 11px;
+  color: var(--cream);
+  letter-spacing: 3px;
+  margin-bottom: 24px;
+}
+
+/* ===== SKILLS ===== */
+.skills-group {
+  margin-bottom: 20px;
+}
+
+.skills-label {
+  font-size: 12px;
+  color: var(--text-dim);
+  margin-bottom: 10px;
+}
+
+.skills-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
 .tag-hot {
   padding: 6px 14px;
   border-radius: 20px;
   font-size: 13px;
   background: #1e0512;
-  border: 0.5px solid #E53888;
-  color: #F37199;
-  display: inline-block;
+  border: 0.5px solid var(--pink);
+  color: var(--pink-light);
 }
 
 .tag-cool {
@@ -179,7 +203,190 @@ body {
   border-radius: 20px;
   font-size: 13px;
   background: #160610;
-  border: 0.5px solid #2a0d1e;
-  color: #804060;
-  display: inline-block;
+  border: 0.5px solid var(--border);
+  color: var(--text-dim);
+}
+/* ===== SECTIONS ===== */
+.section {
+  padding: 48px;
+  border-top: 0.5px solid var(--border);
+  max-width: 800px;
+}
+
+.section-title {
+  font-size: 11px;
+  color: var(--cream);
+  letter-spacing: 3px;
+  margin-bottom: 24px;
+}
+
+/* ===== SKILLS ===== */
+.skills-group {
+  margin-bottom: 20px;
+}
+
+.skills-label {
+  font-size: 12px;
+  color: var(--text-dim);
+  margin-bottom: 10px;
+}
+
+.skills-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tag-hot {
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  background: #1e0512;
+  border: 0.5px solid var(--pink);
+  color: var(--pink-light);
+}
+
+.tag-cool {
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  background: #160610;
+  border: 0.5px solid var(--border);
+  color: var(--text-dim);
+}
+/* ===== PROJECTS ===== */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.project-card {
+  background: var(--bg-card);
+  border: 0.5px solid var(--border);
+  border-radius: 12px;
+  padding: 20px;
+  border-top: 2px solid var(--pink);
+  transition: border-top-color 0.2s;
+}
+
+.project-card:hover {
+  border-top-color: var(--cream);
+}
+
+.project-soon {
+  border-top-color: var(--border) !important;
+  opacity: 0.5;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.card-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.card-status {
+  font-size: 10px;
+  color: #1DCD9F;
+  background: #0a1e16;
+  padding: 2px 8px;
+  border-radius: 10px;
+}
+
+.card-status-soon {
+  font-size: 10px;
+  color: var(--cream);
+  background: #1e1a0a;
+  padding: 2px 8px;
+  border-radius: 10px;
+}
+
+.card-desc {
+  font-size: 13px;
+  color: var(--text-muted);
+  line-height: 1.7;
+  margin-bottom: 14px;
+}
+
+.card-tags {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.ctag-pink {
+  font-size: 11px;
+  color: var(--pink-light);
+  background: #1e0512;
+  padding: 2px 8px;
+  border-radius: 8px;
+}
+
+.ctag-cream {
+  font-size: 11px;
+  color: var(--cream);
+  background: #1e1a0a;
+  padding: 2px 8px;
+  border-radius: 8px;
+}
+
+.ctag-dim {
+  font-size: 11px;
+  color: var(--text-dim);
+  background: #160610;
+  padding: 2px 8px;
+  border-radius: 8px;
+}
+/* ===== CONTACT ===== */
+.contact-desc {
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.8;
+  margin-bottom: 20px;
+  max-width: 460px;
+}
+
+.contact-row {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  background: var(--bg-card);
+  border: 0.5px solid var(--border);
+  border-radius: 8px;
+  font-size: 13px;
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.contact-item:hover {
+  border-color: var(--pink);
+  color: var(--pink-light);
+}
+
+.contact-icon {
+  color: var(--cream);
+  font-size: 14px;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  padding: 24px 48px;
+  border-top: 0.5px solid var(--border);
+  font-size: 12px;
+  color: var(--text-dim);
 }
